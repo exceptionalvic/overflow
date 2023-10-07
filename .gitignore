@@ -1,0 +1,11 @@
+env/
+docs.txt
+
+.pytest_cache/
+__pycache__/
+
+htmlcov/
+
+response.json
+
+.coverage
