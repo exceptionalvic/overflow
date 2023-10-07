@@ -3,7 +3,7 @@ import time
 
 # NOTE: Matplotlib library was not used in
 # in actual compress function. It is optional to plot
-# time complexity graph for demonstration when 
+# time complexity graph for demonstration when
 # plot_graph is set to True.
 import matplotlib.pyplot as plt
 
@@ -15,7 +15,7 @@ def compress(input_str):
     Returns original string if length of string
     is not reduced.
     """
-    
+
     # Return an empty string if the input is empty
     if not input_str:
         return ""
@@ -66,17 +66,17 @@ if __name__ == "__main__":
     # toggle plot time complexity graph.
     # If True, graph will be ploted using matplotlib
     plot_graph = False
-    
+
     # Prompt the user to enter a string
     input_str = input("Enter a string: ")
 
     start_time = time.time()  # Record the start time
-    
+
     # Call the compress function with the user's input
     compressed_result = compress(input_str)
-    
+
     end_time = time.time()  # Record the end time
-    
+
     # Calculate the execution time (time complexity)
     # Convert to milliseconds.
     execution_time = (end_time - start_time) * 1000
@@ -90,7 +90,9 @@ if __name__ == "__main__":
 
     # Print the compressed string.
     # OR the original string based on the compression criteria.
-    print(f"Compressed string: {compressed_result}; Execution Time in MilliSeconds: {execution_time:.4f}")
+    print(
+        f"Compressed string: {compressed_result}; Execution Time in MilliSeconds: {execution_time:.4f}"
+    )
 
     if plot_graph:
         # Different input sizes to test

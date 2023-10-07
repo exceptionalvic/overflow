@@ -28,3 +28,5 @@
 - Input API key variable and replace transaction_hash with desired data.
 - Observe response in shell terminal
 
+# To Run Test
+coverage run -m pytest
